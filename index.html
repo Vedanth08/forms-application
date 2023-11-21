@@ -17,34 +17,87 @@
 
     <body>
 
-        <form class="container mt-5 formContainer">
+        <form class="container mt-5 formContainer" id="formContainer">
 
-            <div class="mb-4">
+            <div class="mb-4 nameContainer " id="nameContainer">
 
-                <label for="nameInput" class="nameLabel ">
+                <label for="nameInput" class="nameLabel mb-2" id="nameLabel">
                     Name
                 </label>
     
-                <input type="" class="nameInput form-control">
+                <input type="text" class="nameInput form-control" id="nameInput" >
+
+                <p class="nameErrormessage text-danger " id = "nameErrormessage"></p>
 
             </div>
 
-            <div class="mb-4">
+            <div class="mb-4" id="mailContainer" >
 
-                <label for="emailInput" class="emailLabel">
+                <label for="emailInput" class="emailLabel mb-2" id="emailLabel">
                     Email
                 </label>
     
-                <input type="" class="emailInput form-control">
+                <input type="email" class="emailInput form-control " id="emailInput" >
+
+                <p class="mailErrormessage text-danger" id="mailErrormessage"></p>
 
             </div>
 
-            <button class="btn btn-primary" type="submit">submit</button>
+            <div class="mb-4 workingstausContainer" id="workingstausContainer">
+
+                <label  for="workingstatusSelect" class="workingstatusLabel  mb-2" id="workingstatusLabel">
+
+                    Working Status
+
+                </label>
+                
+                <select class="workingstatusSelect form-control" id="workingstatusSelect" >
+
+                    <option class="workingstatusInput form-control" id="workingstatusInput1">Active</option>
+
+                    <option class="workingstatusInput form-control" id="workingstatusInput2">Inactive</option>
+
+                    <option class="workingstatusInput form-control" id="workingstatusInput0" selected >----- Select -------</option>
+
+                </select>
+
+            </div>
+
+            <div class="genderContainer mb-4" id="genderContainer">
+
+                <heading for="genderfieldContainer" class="genderHeading mb-2" id="genderLabel">
+
+                    Gender
+
+                </heading>
+
+                <div class="genderfieldContainer" id="genderfieldContainer" >
+
+                    <input type="radio" class="genderInput" id="maleInput" name="gender" checked>
+
+                    <label for="genderInput" class="genderLabel"  id="genderLabel" >Male</label>
+    
+                    <input type="radio" class="genderInput" id="femaleInput" name="gender" >
+    
+                    <label for="genderInput" class="genderLabel" id="genderLabel" >Female</label>   
+
+                </div>
+
+
+
+                
+            </div>
+
+            <button class="btn btn-primary" type="submit" id="submitButton" name="submit">Submit</button>
 
         </form>
+
+
 
     </body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
 
 </html>

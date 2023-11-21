@@ -3,3 +3,16 @@
     padding: 30px;
     border-radius: 10px;
 }
+
+/* .workingstatusSelect option[selected] {
+    text-align: center;
+} */
+
+.genderfieldContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.genderLabel{
+    padding: 0px 10px;
+}
